@@ -1,0 +1,13 @@
+<div class="col-sm-12">
+  <div class="inner">
+    <h4>Comments</h4>
+    <ul>
+      {{#each model as |comment|}}
+      <li>
+        <strong>{{comment.name}}</strong>
+        <p>{{comment.comment}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

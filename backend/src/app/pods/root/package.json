@@ -1,0 +1,5 @@
+{
+  "name":         "RootRouteHandler",
+  "description":  "Handles root routes (/)",
+  "version":      "1.0.0"
+}

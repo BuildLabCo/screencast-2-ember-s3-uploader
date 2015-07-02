@@ -1,0 +1,59 @@
+{{#modal-view}}
+  <div class="container content-container">
+    <div class="row nav-row">
+      <div class="col-sm-11">
+        {{#link-to "posts" classNames="close-modal-button"}}{{/link-to}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-1 sidebar">
+        <div class="item author">
+          <div class="img">
+            {{bg-image classNames="author-image" src=authorImage}}
+          </div>
+          <div class="name">
+            <strong>{{author}}</strong>
+          </div>
+        </div>
+        <div class="item">
+          <p>{{message}}</p>
+        </div>
+
+
+        <div class="item">
+          <strong>Total Pageviews This Session: {{pageViews}}</strong>
+        </div>
+
+        <div class="item">
+          <strong>1 of {{postsCount}}</strong>
+        </div>
+
+        
+        {{#if nextPost}}
+        <div class="item">
+          <strong>Next Post:</strong>
+          {{#link-to "posts.post" nextPost}}
+            <img {{bind-attr src=nextPost.imageThumbWithPath}} />
+          {{/link-to}}
+        </div>
+        {{/if}}
+        {{#if previousPost}}
+        <div class="item">
+          <strong>Previous Post:</strong>
+          {{#link-to "posts.post" previousPost}}
+            <img {{bind-attr src=previousPost.imageThumbWithPath}} />
+          {{/link-to}}
+        </div>
+        {{/if}}
+        
+
+      </div>
+      <div class="col-sm-7 post-view text-right">
+        <figure>
+          <img {{bind-attr src=imageMediumWithPath}} />
+        </figure>
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+{{/modal-view}}

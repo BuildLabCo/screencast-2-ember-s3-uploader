@@ -1,0 +1,55 @@
+{
+  "name": "hapi-skeleton",
+  "version": "1.0.0",
+  "description": "A skeleton for HAPIjs APIs",
+  "main": "server.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "gulp serve",
+    "build": "gulp build",
+    "createPosts": "babel-node ./src/lib/tasks/createPosts.js",
+    "sizeImages": "babel-node ./src/lib/tasks/sizeImages.js"
+  },
+  "keywords": [
+    "HAPI",
+    "HapiJs",
+    "API",
+    "Node",
+    "es6"
+  ],
+  "author": "Kyle Davis (validkeys)",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^1.0.0",
+    "bcrypt": "^0.8.3",
+    "bluebird": "^2.9.27",
+    "boom": "^2.7.2",
+    "crypto": "0.0.3",
+    "dot-env": "0.0.1",
+    "glob": "^5.0.10",
+    "glue": "^2.0.0",
+    "good": "^6.1.4",
+    "hapi": "^8.6.0",
+    "joi": "^6.4.3",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.3",
+    "mrhorse": "^1.1.0",
+    "path": "^0.11.14",
+    "rethinkdb": "^2.0.0-1",
+    "s3-policy": "^0.2.0",
+    "thinky": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "del": "^1.2.0",
+    "fastimage": "^1.0.2",
+    "good-console": "^5.0.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-cached": "^1.0.4",
+    "gulp-lab": "^1.0.5",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-watch": "^4.2.4"
+  }
+}
